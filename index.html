@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website of Joypriya R, a computer science student.">
+  <title>Joypriya R | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Joypriya R home">JR<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle light/dark theme">☼</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT</p>
+          <h1>Hello, I'm <span>Joypriya R.</span></h1>
+          <p class="hero-lead">I’m a Computer Science student who enjoys learning how ideas can become useful things people can actually use.</p>
+          <p class="hero-description">I’m still learning, and I learn best by trying things out, making mistakes, fixing them, and trying again.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Contact me</a>
+          </div>
+          <p class="small-note">Right now, I’m practising HTML, CSS, JavaScript, and the basics of building websites.</p>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="profile-frame">
+            <!-- Replace images/profile.jpg with your own image. Keep the same file name or update the src. -->
+            <img src="images/profile.jpg" alt="Joypriya R profile photo" class="profile-image"
+                 onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+            <div class="profile-placeholder" hidden aria-label="Profile photo placeholder">
+              <span>JR</span>
+              <small>ADD YOUR PHOTO</small>
+            </div>
+          </div>
+          <div class="floating-card card-top"><span class="mini-icon">✦</span><span>Curious learner</span></div>
+          <div class="floating-card card-bottom"><span class="mini-icon">⌘</span><span>Building step by step</span></div>
+          <div class="decor decor-one"></div><div class="decor decor-two"></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">↓</a>
+    </section>
+
+    <section class="section section-muted" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Small steps, <span>real progress.</span></h2>
+          <p>A little about me, what I enjoy learning, and what I hope to build next.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-mark" aria-hidden="true"><span>JR</span><i></i></div>
+          <div class="about-content">
+            <h3>Hi, I’m Joypriya!</h3>
+            <p>I’m a Computer Science student building my skills one topic at a time. I enjoy seeing how code, design, and problem-solving come together to make a website work.</p>
+            <p>I’m working on getting more confident with programming and web development. This portfolio is a snapshot of where I am right now, and I plan to keep improving it as I learn new things.</p>
+            <div class="about-facts">
+              <div><strong>01</strong><span>Keep learning</span></div>
+              <div><strong>02</strong><span>Build projects</span></div>
+              <div><strong>03</strong><span>Improve every day</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M DEVELOPING</p>
+          <h2>Skills & <span>interests</span></h2>
+          <p>These are the areas I’m practising at the moment. I’m still learning, so this list will grow with my experience.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">&lt;/&gt;</div><h3>Web development</h3>
+            <p>Building and styling web pages, then adding simple interactions.</p>
+            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">⌘</div><h3>Programming</h3>
+            <p>Working through coding exercises and learning to break a problem into smaller steps.</p>
+            <div class="skill-tags"><span>Problem solving</span><span>Basics</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">✧</div><h3>Personal strengths</h3>
+            <p>Staying curious, asking questions, and learning from feedback and practice.</p>
+            <div class="skill-tags"><span>Teamwork</span><span>Research</span><span>Curiosity</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects I'm <span>working on</span></h2>
+          <p>Here are a few projects and practice exercises that have helped me learn by doing.</p>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-button" type="button" data-filter="academic" aria-pressed="false">Academic</button>
+          <button class="filter-button" type="button" data-filter="practice" aria-pressed="false">Practice</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="web">
+            <div class="project-art"><img class="project-image" src="images/projects/land-portal.svg" alt="Illustrated preview of a land-data and GIS dashboard"><span class="art-label">PROJECT 01</span></div>
+            <div class="project-info"><div class="project-meta"><span>WEB DEVELOPMENT</span><span>01</span></div>
+              <h3>AI-Powered Land Data & Policy Portal</h3>
+              <p>This is a concept I explored for a student hackathon: one place to bring together land datasets, map information, and policy research so they are easier to explore.</p>
+              <p class="project-learning"><strong>What I’m exploring:</strong> GIS data, AI-assisted research, and how to present information clearly on a dashboard.</p>
+              <div class="project-footer"><span class="tech-pill">React · Python · GIS concept</span><a href="#contact" class="text-link">Ask me about it ↗</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-category="academic">
+            <div class="project-art"><img class="project-image" src="images/projects/number-game.svg" alt="Illustrated preview of the Guess the Number browser game"><span class="art-label">PROJECT 02</span></div>
+            <div class="project-info"><div class="project-meta"><span>COLLEGE PROJECT</span><span>02</span></div>
+              <h3>Guess the Number Game</h3>
+              <p>A small browser game where the computer picks a number and the player keeps guessing until they find it.</p>
+              <p class="project-learning"><strong>What I practised:</strong> JavaScript functions, random numbers, reading input, and showing feedback on the page.</p>
+              <div class="project-footer"><span class="tech-pill">HTML · JavaScript</span><a href="#contact" class="text-link">Ask me about it ↗</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-category="practice">
+            <div class="project-art"><img class="project-image" src="images/projects/calculator.svg" alt="Illustrated preview of a basic calculator interface"><span class="art-label">PROJECT 03</span></div>
+            <div class="project-info"><div class="project-meta"><span>PRACTICE PROJECT</span><span>03</span></div>
+              <h3>Basic JavaScript Calculator</h3>
+              <p>A basic calculator made to practise taking numbers from the user and working through everyday arithmetic.</p>
+              <p class="project-learning"><strong>What I practised:</strong> Button events, arithmetic logic, and connecting JavaScript with an HTML page.</p>
+              <div class="project-footer"><span class="tech-pill">HTML · CSS · JavaScript</span><a href="#contact" class="text-link">Ask me about it ↗</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="project-tip"><span>Tip:</span> Only add project links after you have tested that they work.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have a question or an idea? <span>Let's talk.</span></h2>
+          <p>If you’d like to talk about a project, share an idea, or connect professionally, feel free to reach out. The form below is a demo and won’t send a message yet.</p>
+          <!-- Replace the example email below with an address you are comfortable sharing publicly. -->
+          <a class="email-link" href="mailto:joypriyaranjithkumar@gmail.com">joypriyaranjithkumar@gmail.com <span>↗</span></a>
+          <p class="small-note">You can email me directly using the address above.</p>
+          <a class="linkedin-link" id="linkedinLink" href="https://www.linkedin.com/in/joypriya-r-3a3b11400/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn ↗</a>
+          <p class="small-note">Visit my LinkedIn profile to connect professionally.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="visitorName">Your name</label>
+          <input id="visitorName" name="visitorName" type="text" placeholder="Enter your name" required>
+          <label for="visitorEmail">Your email</label>
+          <input id="visitorEmail" name="visitorEmail" type="email" placeholder="name@example.com" required>
+          <label for="visitorMessage">Message</label>
+          <textarea id="visitorMessage" name="visitorMessage" rows="4" placeholder="Write a short message..." required></textarea>
+          <button class="button button-primary form-submit" type="submit">Check message <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          <p class="form-disclaimer">Demo form: it validates your entries but does not send or store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">JR<span>.</span></a>
+      <p>Made with care by Joypriya R, while learning and improving along the way.</p>
+      <p>© <span id="currentYear"></span> Joypriya R · A work in progress, just like learning.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
